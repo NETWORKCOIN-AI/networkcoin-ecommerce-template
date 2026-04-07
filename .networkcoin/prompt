@@ -1,0 +1,10 @@
+This is a NetworkCoin e-commerce template built with Vite, React 18, TypeScript, Tailwind CSS, and shadcn/ui.
+
+Key architecture:
+- Cart state is managed via React Context (src/contexts/CartContext.tsx)
+- Stripe integration is initialized in src/lib/stripe.ts using VITE_STRIPE_PUBLISHABLE_KEY
+- UI components are in src/components/ui/ (shadcn/ui primitives)
+- Cart components: CartDrawer (slide-out sheet) and CartItem
+- Checkout: CheckoutForm with shipping fields and Stripe CardElement placeholder
+- Routing uses HashRouter from react-router-dom
+- Styling uses Tailwind CSS with shadcn CSS variables for theming
